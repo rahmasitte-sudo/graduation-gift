@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Graduation Gift for us🎀
+            LATIFA & RAHMA
+</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff7f8;
+    color: #694d5b;
+    overflow-x: hidden;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    font-size: 20px;
+    animation: float 9s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* WELCOME */
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe1eb, #f2e5ff, #fff4df);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.hero-box {
+    max-width: 700px;
+    background: rgba(255,255,255,0.65);
+    padding: 50px 30px;
+    border-radius: 35px;
+    border: 1px solid white;
+    box-shadow: 0 10px 35px rgba(190,130,170,0.15);
+}
+
+.small-label {
+    color: #cb6e97;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #bd638c;
+    margin: 20px 0;
+}
+
+.hero p {
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    background: #d97da5;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 40px;
+    font-size: 16px;
+    box-shadow: 0 5px 15px #e8b4ce;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px);
+    background: #bf618c;
+}
+
+.decor {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+/* MESSAGE */
+
+.message-section {
+    min-height: 75vh;
+    background: #fffaf1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.message-box {
+    max-width: 700px;
+}
+
+.message-box h1 {
+    color: #a878b4;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin-bottom: 20px;
+}
+
+.message-box p {
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+/* GIFT SECTION */
+
+.gifts-section {
+    padding: 75px 25px;
+    background: linear-gradient(180deg, #ffe9f1, #f7edff);
+    text-align: center;
+    position: relative;
+}
+
+.gifts-section h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #bd638c;
+    margin: 15px 0;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.gift-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 28px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(160,100,150,0.12);
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(160,100,150,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin: 20px 0 10px;
+    font-size: 1.7rem;
+}
+
+.card p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    text-align: left;
+    line-height: 2.1;
+    margin: 10px 0 20px;
+}
+
+.money h2 {
+    color: #57a98a;
+}
+
+.random h2 {
+    color: #df9143;
+}
+
+.beauty h2 {
+    color: #d97da5;
+}
+
+.choose-btn {
+    color: white;
+    padding: 13px;
+    border-radius: 30px;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+.money .choose-btn {
+    background: #57a98a;
+}
+
+.random .choose-btn {
+    background: #d79554;
+}
+
+.beauty .choose-btn {
+    background: #d97da5;
+}
+
+.choose-btn:hover {
+    transform: scale(1.04);
+    filter: brightness(0.95);
+}
+
+.shop-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #795a70;
+    background: #fff1f7;
+    padding: 12px 15px;
+    border-radius: 25px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.shop-link:hover {
+    background: #f8dce9;
+}
+
+/* POPUP */
+
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(65,40,60,0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.popup-box {
+    background: #fffafc;
+    max-width: 450px;
+    width: 100%;
+    padding: 35px 25px;
+    border-radius: 30px;
+    text-align: center;
+    animation: appear 0.4s ease;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.popup-box h2 {
+    color: #bd638c;
+    margin: 15px 0;
+}
+
+.popup-box p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    background: #d97da5;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+footer {
+    padding: 35px 20px;
+    background: #e8d6f4;
+    text-align: center;
+    line-height: 2;
+}
+
+/* MOBILE */
+
+@media(max-width: 900px) {
+    .gift-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    .gift-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 230px;
+    }
+
+    .hero-box {
+        padding: 35px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING DECORATIONS -->
+<div class="heart" style="left:10%; animation-delay:0s;">💗</div>
+<div class="heart" style="left:25%; animation-delay:3s;">🌸</div>
+<div class="heart" style="left:50%; animation-delay:1s;">💕</div>
+<div class="heart" style="left:75%; animation-delay:4s;">✨</div>
+<div class="heart" style="left:90%; animation-delay:2s;">💗</div>
+
+<!-- PAGE 1 -->
+<section class="hero" id="home">
+
+    <div class="hero-box">
+
+        <div class="decor">🎀 🌷 💌</div>
+
+        <p class="small-label">
+            A little surprise for our graduation
+                    
+            LATIFA & RAHMA
+        </p>
+
+        <h1>yamalibog bakaw kong ono yang a regalo mo kanami ni denden?</h1>
+
+        <p>
+            ayaw da pagkalibog, i gotcha pwede kaw gayd mamili adi sa tulo💗
+        </p>
+
+        <button class="main-btn" onclick="continuePage()">
+            Continue ♡
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PAGE 2 -->
+<section class="message-section" id="message">
+
+    <div class="message-box">
+
+        <div class="decor">🧸 🌷</div>
+
+        <h1>ayaw pagkalibog be denz🫶🎀</h1>
+
+        <p>
+            I made this so you can choose what you actually want
+            to give for our upcoming graduation.<br>
+            No need to guess, just choose your favorite!🥹💗
+        </p>
+
+        <button class="main-btn" onclick="goDown()">
+            Go Down ↓
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PAGE 3 -->
+<section class="gifts-section" id="gifts">
+
+    <p class="small-label">yang tulo na pagpiliyon mo</p>
+
+    <h1>Choose Your Gift 🎁</h1>
+
+    <p class="subtitle">
+        Anything you choose will be appreciated. 💗<br>
+        Here's a little list to make it easier!
+    </p>
+
+    <div class="gift-container">
+
+        <!-- MONEY -->
+        <div class="card money">
+
+            <img
+            src="money.jfif"
+            alt="Money">
+
+            <h2>💸 Kwarta</h2>
+
+            <p>
+                kong yamalibog kaw tas wakaw katigam ng a hatag mo pwede ra kaayo ni
+                kay yani kami da bahala nang abiliyon nami😊😁
+            </p>
+
+            <button class="choose-btn"
+            onclick="selectGift('Kwarta 💸')">
+                Choose Kwarta
+            </button>
+
+        </div>
+
+        <!-- RANDOM THINGS -->
+        <div class="card random">
+
+            <img
+            src="random.jfif"
+            alt="Fashion bag">
+
+            <h2>🛍️ Gamit (Random)</h2>
+
+            <p>
+                yani kay about yani sang gamit HEHEHEHE😁😁😁
+                kay since soon to be college da ako and si denden is also soon to be high school 
+                amakatabang japon yani kanami, HEHEHEHE😁😁😁
+            </p>
+
+            <ul>
+                <li>🎀 Aesthetic bags</li>
+                <li>👗 Clothes</li>
+                <li>💻 Laptop accessories</li>
+                <li>🎧 Headphones</li>
+                <li>⌨️ Keyboard</li>
+                <li>🧸 Cute accessories</li>
+            </ul>
+
+            <a class="shop-link"
+            href="https://shopee.ph/search?keyword=aesthetic%20bag%20women"
+            target="_blank">
+                Browse gift ideas ↗
+            </a>
+
+            <button class="choose-btn"
+            onclick="selectGift('Gamit (Random) 🛍️')">
+                Choose Random Gift
+            </button>
+
+        </div>
+
+        <!-- BEAUTY CARE -->
+        <div class="card beauty">
+
+            <img
+            src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80"
+            alt="Skincare">
+
+            <h2>🧴 Beauty Care</h2>
+
+            <p>
+              kong a SHARE mo yang kanmo secret about sa beuty care mo pwede yani pilion mo
+              since mga yagit mang kami ni denden HAHAHAHAHAAHHA
+            </p>
+
+            <ul>
+                <li>🫧 Facial wash</li>
+                <li>💧 Moisturizer</li>
+                <li>☀️ Sunscreen</li>
+                <li>🧖🏻‍♀️ Face mask</li>
+                <li>🌷 Body care</li>
+                <li>🧴 Skincare essentials</li>
+            </ul>
+
+            <a class="shop-link"
+            href="https://shopee.ph/search?keyword=facial%20wash%20skincare"
+            target="_blank">
+                Browse skincare ↗
+            </a>
+
+            <button class="choose-btn"
+            onclick="selectGift('Beauty Care 🧴')">
+                Choose Beauty Care
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SURPRISE POPUP -->
+<div class="popup" id="popup">
+
+    <div class="popup-box">
+
+        <div style="font-size:45px;">💗 🎓 🌷</div>
+
+        <h2 id="popupTitle">Yay!</h2>
+
+        <p id="popupMessage">shukran sang be denz🫶🎀, pwede e screenshot mo para makita nami🥹</p>
+
+        <button class="close-btn" onclick="closePopup()">
+            Close ♡
+        </button>
+
+    </div>
+
+</div>
+<!-- PAGE 2 -->
+<section class="message-section" id="message">
+
+    <div class="message-box">
+
+        <div class="decor">🧸 🌷</div>
+
+        <h1>SHUKRAN Be Denica🫶🎀</h1>
+
+        <p>
+            for choosing the gift,
+            tbh for fun lang manjud ni
+            HAHAHA and i realiza na
+             "what if e send nako ni kay be?"
+            and so i did HAHAHA, kay you know, basin ma atag kaw ba🥹💗
+            hapit na biya graduation three months nalang para advance ba
+            HAHAHAHAHHAHAHA, bitaw bay boring manggud so gi buhat dako gayd yani.
+        </p>
+
+    </div>
+<!-- FOOTER -->
+<footer>
+
+    <p>Made with love & lots of excitement 💗</p>
+
+    <p>
+        Thank you for being part of our  graduation journey! 🎓
+    </p>
+
+    <p>♡ 2027 | A Little Graduation Surprise for both of us
+                               denden and me🫶 ♡</p>
+
+</footer>
+
+<script>
+
+function continuePage() {
+    document.getElementById("message").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function goDown() {
+    document.getElementById("gifts").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function selectGift(gift) {
+
+    document.getElementById("popupTitle").innerText =
+        "You chose " + gift + "! 🎀";
+
+    document.getElementById("popupMessage").innerText =
+        "Awww, thank you for choosing " + gift +
+        " for our graduation! 🥹💗 " +
+        "Please remember your choice hehe! " +
+        "Thank you for making our graduation extra special! 🌷";
+
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
+
